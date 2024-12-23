@@ -1,0 +1,412 @@
+# Query: blue
+# ContextLines: 1
+
+121 results - 14 files
+
+package-lock.json:
+  1510        "dev": true,
+  1511:       "license": "BlueOak-1.0.0",
+  1512        "dependencies": {
+
+  1816        "dev": true,
+  1817:       "license": "BlueOak-1.0.0"
+  1818      },
+
+  1840        "dev": true,
+  1841:       "license": "BlueOak-1.0.0",
+  1842        "dependencies": {
+
+app\(auth)\sign-in\[[...sign-in]]\page.tsx:
+   6  			<div className='lg:grid lg:min-h-screen lg:grid-cols-12'>
+   7: 				<section className='relative flex h-32 items-end bg-teal-900 lg:col-span-5 lg:h-full xl:col-span-6'>
+   8  					<img
+
+  44  							<a
+  45: 								className='inline-flex size-16 items-center justify-center rounded-full bg-white text-teal-600 sm:size-20'
+  46  								href='#'>
+
+  59  
+  60: 							<h1 className='mt-2 text-2xl font-bold text-teal-900 sm:text-3xl md:text-4xl'>
+  61  								Welcome to Historic 🦑
+
+  63  
+  64: 							<p className='mt-4 leading-relaxed text-teal-800'>
+  65  								Discover the Best Deals Online – Shop Your Favorite Brands Now!
+
+app\(auth)\sign-up\[[...sign-up]]\page.tsx:
+   6  			<div className='lg:grid lg:min-h-screen lg:grid-cols-12'>
+   7: 				<section className='relative flex h-32 items-end bg-teal-900 lg:col-span-5 lg:h-full xl:col-span-6'>
+   8  					<img
+
+  44  							<a
+  45: 								className='inline-flex size-16 items-center justify-center rounded-full bg-white text-teal-600 sm:size-20'
+  46  								href='#'>
+
+  59  
+  60: 							<h1 className='mt-2 text-2xl font-bold text-teal-900 sm:text-3xl md:text-4xl'>
+  61  								Welcome to Historic 🦑
+
+  63  
+  64: 							<p className='mt-4 leading-relaxed text-teal-800'>
+  65  								Discover the Best Deals Online – Shop Your Favorite Brands Now!
+
+app\_component\Banner.tsx:
+   5  		<div>
+   6: 			<section className='dark:bg-gray-900 bg-teal-50 w-full dark:text-white text-emerald-950'>
+   7  				<div className='w-full px-4 py-32 lg:flex lg:h-screen lg:items-center'>
+   8  					<div className='mx-auto w-full  text-center'>
+   9: 						<h1 className='bg-gradient-to-r from-green-800 via-teal-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl'>
+  10  							Discover the Best Deals Online – Shop
+
+  13  
+  14: 						<p className='mx-auto mt-4 max-w-xl sm:text-xl/relaxed bg-gradient-to-r from-green-900 via-teal-600 to-purple-950 bg-clip-text text-lg text-transparent'>
+  15  							Exclusive discounts, fresh arrivals, and unbeatable prices – all
+
+  20  							<a
+  21: 								className='block w-full rounded border border-teal-600 bg-teal-600 px-12 py-3 text-sm font-medium text-white hover:text-teal-700 hover:bg-transparent  focus:outline-none focus:ring active:text-opacity-75 sm:w-auto'
+  22  								href='#'>
+
+  26  							<a
+  27: 								className='block w-full rounded border border-teal-600 px-12 py-3 text-sm font-medium dark:text-white  text-teal-700 focus:outline-none focus:ring active:bg-teal-500 sm:w-auto'
+  28  								href='#'>
+
+app\_component\breadCramps.tsx:
+  12  				className='flex '>
+  13: 				<ol className='flex overflow-hidden rounded-lg border border-teal-200 text-teal-600'>
+  14  					<li className='flex items-center'>
+
+  16  							href='#'
+  17: 							className='flex h-10 items-center gap-1.5 bg-teal-100 px-4 transition hover:text-teal-900'>
+  18  							<svg
+
+  36  					<li className='relative flex items-center'>
+  37: 						<span className='absolute inset-y-0 -start-px h-10 w-4 bg-teal-100 [clip-path:_polygon(0_0,_0%_100%,_100%_50%)] rtl:rotate-180'></span>
+  38  
+
+  40  							href='#'
+  41: 							className='flex h-10 items-center bg-white pe-4 ps-8 text-xs font-medium transition hover:text-teal-900'>
+  42  							{subtitle}
+
+  45  					<li className='relative flex items-center'>
+  46: 						<span className='absolute inset-y-0 -start-px h-10 w-4 bg-teal-100 [clip-path:_polygon(0_0,_0%_100%,_100%_50%)] rtl:rotate-180'></span>
+  47  						<a
+  48  							href='#'
+  49: 							className='flex h-10 items-center bg-white pe-4 ps-8 text-xs font-medium transition hover:text-teal-900'>
+  50  							{id}
+
+app\_component\footer.tsx:
+   11  					<div className='lg:flex lg:items-start lg:gap-8'>
+   12: 						<div className='text-teal-600'>
+   13  							<svg
+
+   27  								<div>
+   28: 									<h2 className='text-2xl font-bold text-teal-950'>
+   29  										Get the latest news!
+
+   31  
+   32: 									<p className='mt-4 text-teal-800'>
+   33  										Welcome to Historic , your one-stop destination for quality
+
+   48  
+   49: 									<div className='border rounded-full p-3 border-teal-100 outline-none  focus-within:shadow-md sm:flex sm:items-center sm:gap-4'>
+   50  										<input
+
+   56  
+   57: 										<button className='mt-1 w-full rounded-full bg-teal-500 px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-none hover:bg-teal-600 sm:mt-0 sm:w-auto sm:shrink-0'>
+   58  											Sign Up
+
+   64  							<div className='col-span-2 sm:col-span-1'>
+   65: 								<p className='font-medium text-teal-950'>Services</p>
+   66  
+
+   70  											href='#'
+   71: 											className='text-teal-800 transition hover:opacity-75'>
+   72  											{' '}
+
+   79  											href='#'
+   80: 											className='text-teal-800 transition hover:opacity-75'>
+   81  											{' '}
+
+   88  											href='#'
+   89: 											className='text-teal-800 transition hover:opacity-75'>
+   90  											{' '}
+
+   97  											href='#'
+   98: 											className='text-teal-800 transition hover:opacity-75'>
+   99  											{' '}
+
+  106  											href='#'
+  107: 											className='text-teal-800 transition hover:opacity-75'>
+  108  											{' '}
+
+  115  							<div className='col-span-2 sm:col-span-1'>
+  116: 								<p className='font-medium text-teal-950'>Company</p>
+  117  
+
+  121  											href='#'
+  122: 											className='text-teal-800 transition hover:opacity-75'>
+  123  											{' '}
+
+  130  											href='#'
+  131: 											className='text-teal-800 transition hover:opacity-75'>
+  132  											{' '}
+
+  139  											href='#'
+  140: 											className='text-teal-800 transition hover:opacity-75'>
+  141  											{' '}
+
+  148  							<div className='col-span-2 sm:col-span-1'>
+  149: 								<p className='font-medium text-teal-950'>Helpful Links</p>
+  150  
+
+  154  											href='#'
+  155: 											className='text-teal-800 transition hover:opacity-75'>
+  156  											{' '}
+
+  163  											href='#'
+  164: 											className='text-teal-800 transition hover:opacity-75'>
+  165  											{' '}
+
+  172  											href='#'
+  173: 											className='text-teal-800 transition hover:opacity-75'>
+  174  											{' '}
+
+  181  							<div className='col-span-2 sm:col-span-1'>
+  182: 								<p className='font-medium text-teal-950'>Legal</p>
+  183  
+
+  187  											href='#'
+  188: 											className='text-teal-800 transition hover:opacity-75'>
+  189  											{' '}
+
+  196  											href='#'
+  197: 											className='text-teal-800 transition hover:opacity-75'>
+  198  											{' '}
+
+  205  											href='#'
+  206: 											className='text-teal-800 transition hover:opacity-75'>
+  207  											{' '}
+
+  214  											href='#'
+  215: 											className='text-teal-800 transition hover:opacity-75'>
+  216  											{' '}
+
+  223  							<div className='col-span-2 sm:col-span-1'>
+  224: 								<p className='font-medium text-teal-950'>Downloads</p>
+  225  
+
+  229  											href='#'
+  230: 											className='text-teal-800 transition hover:opacity-75'>
+  231  											{' '}
+
+  238  											href='#'
+  239: 											className='text-teal-800 transition hover:opacity-75'>
+  240  											{' '}
+
+  252  										target='_blank'
+  253: 										className='text-teal-800 transition hover:opacity-75'>
+  254  										<span className='sr-only'>Facebook</span>
+
+  274  										target='_blank'
+  275: 										className='text-teal-800 transition hover:opacity-75'>
+  276  										<span className='sr-only'>Instagram</span>
+
+  296  										target='_blank'
+  297: 										className='text-teal-800 transition hover:opacity-75'>
+  298  										<span className='sr-only'>Twitter</span>
+
+  314  										target='_blank'
+  315: 										className='text-teal-800 transition hover:opacity-75'>
+  316  										<span className='sr-only'>GitHub</span>
+
+  336  										target='_blank'
+  337: 										className='text-teal-800 transition hover:opacity-75'>
+  338  										<span className='sr-only'>Dribbble</span>
+
+  356  
+  357: 					<div className='mt-8 border-t border-teal-100 pt-8'>
+  358  						<div className='sm:flex sm:justify-between'>
+  359: 							<p className='text-xs text-teal-500'>
+  360  								&copy; 2022. Company Name. All rights reserved.
+
+  366  										href='#'
+  367: 										className='text-teal-500 transition hover:opacity-75'>
+  368  										{' '}
+
+  375  										href='#'
+  376: 										className='text-teal-500 transition hover:opacity-75'>
+  377  										{' '}
+
+  384  										href='#'
+  385: 										className='text-teal-500 transition hover:opacity-75'>
+  386  										{' '}
+
+app\_component\header.tsx:
+   24  						<Link
+   25: 							className='block text-teal-600'
+   26  							href='/#'>
+
+   83  										<Link
+   84: 											className='block rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-teal-700'
+   85  											href='/sign-up'>
+
+   89  										<Link
+   90: 											className='hidden rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block'
+   91  											href='/sign-up'>
+
+  114  								<div className='flex justify-center items-center gap-5'>
+  115: 									<div className='text-teal-600 flex gap-1 justify-center items-center'>
+  116  										<div>
+  117: 											( <span className='text-teal-700'>0</span> )
+  118  										</div>{' '}
+
+app\content\about\page.tsx:
+   7  		<>
+   8: 			<div className='min-h-screen bg-teal-50 pt-20'>
+   9  				<header className=''>
+  10  					<div className='max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8'>
+  11: 						<h1 className='text-3xl font-bold text-teal-900'>About Us</h1>
+  12  					</div>
+
+  19  							<div>
+  20: 								<h2 className='text-2xl font-semibold text-teal-800'>
+  21  									Who We Are
+  22  								</h2>
+  23: 								<p className='mt-4 text-teal-900 leading-relaxed'>
+  24  									ShopEase is your one-stop destination for a seamless online
+
+  29  
+  30: 								<h2 className='mt-8 text-2xl font-semibold text-teal-800'>
+  31  									Our Mission
+  32  								</h2>
+  33: 								<p className='mt-4 text-teal-900 leading-relaxed'>
+  34  									Our mission is to revolutionize the shopping experience by
+
+  51  						<div className='mt-16'>
+  52: 							<h2 className='text-2xl font-semibold text-teal-800 text-center'>
+  53  								Our Core Values
+
+  57  								<div className='bg-white shadow-md rounded-lg p-6 text-center'>
+  58: 									<h3 className='text-xl font-bold text-teal-800'>
+  59  										Customer Focus
+  60  									</h3>
+  61: 									<p className='mt-2 text-teal-900'>
+  62  										Everything we do is centered around providing the best
+
+  67  								<div className='bg-white shadow-md rounded-lg p-6 text-center'>
+  68: 									<h3 className='text-xl font-bold text-teal-800'>
+  69  										Innovation
+  70  									</h3>
+  71: 									<p className='mt-2 text-teal-900'>
+  72  										We embrace cutting-edge technologies to improve our platform
+
+  77  								<div className='bg-white shadow-md rounded-lg p-6 text-center'>
+  78: 									<h3 className='text-xl font-bold text-teal-800'>
+  79  										Sustainability
+  80  									</h3>
+  81: 									<p className='mt-2 text-teal-900'>
+  82  										We are committed to environmentally-friendly practices in
+
+app\content\categouris\page.tsx:
+   73  		<div className=' min-h-screen'>
+   74: 			<h1 className='pt-32 pb-10 mx-16 text-4xl text-teal-700 font-bold'>
+   75  				Start Shopping Today!
+
+   85  							key={id}
+   86: 							className='w-72 mx-auto transform transition-transform bg-teal-50  rounded-t-3xl  overflow-hidden duration-300 hover:shadow-lg'>
+   87: 							<div className='relative block shadow-md  hover:shadow-xl bg-teal-50 transition-shadow duration-300'>
+   88  								{/* Image with Hover Zoom */}
+
+   98  								{/* Content */}
+   99: 								<div className='relative border-t-2 mx-7 py-6 border-teal-100 bg-teal-50'>
+  100  									<form className='mt-2 flex gap-4'>
+
+  102  											href={`/content/categouris/${id}`}
+  103: 											className='block w-full rounded bg-teal-900 px-10 py-3 text-center text-lg font-medium text-white transition hover:scale-105'>
+  104  											{box.category}
+
+app\content\categouris\[id]\page.tsx:
+   75  		return (
+   76: 			<div className='text-center text-teal-600'>
+   77  				No ID provided in the route.
+
+  105  				<div className='px-5'>
+  106: 					<h1 className='pb-5 pt-10 text-teal-500 text-4xl font-bold'>
+  107  						{item.category}
+
+  125  			) : (
+  126: 				<p className='text-teal-600'>No similar items found.</p>
+  127  			)}
+
+app\product\box.tsx:
+  26  			<div className='relative block rounded-tr-3xl shadow-md hover:shadow-xl transition-shadow duration-300'>
+  27: 				<span className='absolute -right-px -top-px rounded-bl-3xl rounded-tr-3xl bg-gradient-to-r from-teal-600 to-gray-500 px-6 py-4 font-medium uppercase tracking-widest text-white'>
+  28  					{category}
+
+  41  				{/* Content */}
+  42: 				<div className='relative border-t-2 mx-7 py-6  border-teal-100 bg-white '>
+  43: 					<p className='text-teal-700'>${price}</p>
+  44  
+
+  50  					<div className='flex justify-between px-5 py-1 items-center'>
+  51: 						<p className='  text-teal-700 line-clamp-3 font-bold'>
+  52  							rate :{' '}
+
+  55  						</p>
+  56: 						<p className='  text-teal-700 line-clamp-3 font-bold'>
+  57  							count :{' '}
+
+  64  							href={'#'}
+  65: 							className='block w-full rounded bg-teal-100 px-4 text-center py-3 text-sm font-medium text-teal-900 transition hover:scale-105'>
+  66  							Add to Cart
+
+  70  							href={`/product/${id}`}
+  71: 							className='block w-full rounded bg-teal-900 px-4 py-3 text-center text-sm font-medium text-white transition hover:scale-105'>
+  72  							Buy Now
+
+app\product\boxContainer.tsx:
+  62  		<>
+  63: 			<h1 className='my-12 mx-16 text-4xl text-teal-700 font-bold'>
+  64  				Start Shopping Today!
+
+app\product\loadCard.tsx:
+   5  		<div>
+   6: 			<div className='text-center text-teal-600 mx-10 my-10'>
+   7: 				<div className='text-center text-teal-600'>
+   8  					<div className='text-center mt-10 text-lg font-medium'>
+   9  						<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1  gap-6'>
+  10: 							<div className='rounded-lg shadow-md bg-teal-200 dark:bg-teal-700 animate-pulse'>
+  11: 								<div className='h-48 bg-teal-300 dark:bg-teal-600'></div>
+  12  								<div className='p-4'>
+  13: 									<div className='h-6 bg-teal-400 dark:bg-teal-500 rounded mb-2'></div>
+  14: 									<div className='h-4 bg-teal-300 dark:bg-teal-600 rounded'></div>
+  15  								</div>
+
+app\product\[id]\page.tsx:
+   76  		return (
+   77: 			<div className='text-center text-teal-600'>
+   78  				No ID provided in the route.
+
+  115  				<div className='relative bg-white p-14 text-start'>
+  116: 					<p className='text-teal-700'>${item.price}</p>
+  117  					<h3 className='mt-1.5 text-lg font-medium text-gray-900 line-clamp-1'>
+
+  119  					</h3>
+  120: 					<span className='absolute -right-px -top-px rounded-bl-3xl z-10 rounded-tr-3xl bg-gradient-to-r from-teal-600 to-gray-500 px-6 py-4 font-medium uppercase tracking-widest text-white'>
+  121  						{item.category}
+
+  126  					<div className='flex flex-col py-1 items-start'>
+  127: 						<p className='text-teal-700 font-bold'>
+  128  							Rate:{' '}
+
+  131  						</p>
+  132: 						<p className='text-teal-700 font-bold'>
+  133  							Count:{' '}
+
+  149  				<div>
+  150: 					<h1 className='pb-3 pt-20 text-teal-500 text-4xl font-bold'>
+  151  						Similar Products
+
+  169  			) : (
+  170: 				<p className='text-teal-600'>No similar items found.</p>
+  171  			)}

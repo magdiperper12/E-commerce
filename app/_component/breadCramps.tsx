@@ -10,11 +10,11 @@ function BreadCramps({ title, subtitle, id }: typing) {
 			<nav
 				aria-label='Breadcrumb'
 				className='flex '>
-				<ol className='flex overflow-hidden rounded-lg border border-gray-200 text-gray-600'>
+				<ol className='flex overflow-hidden rounded-lg border border-blue-200 text-blue-600'>
 					<li className='flex items-center'>
 						<a
 							href='#'
-							className='flex h-10 items-center gap-1.5 bg-gray-100 px-4 transition hover:text-gray-900'>
+							className='flex h-10 items-center gap-1.5 bg-blue-100 px-4 transition hover:text-blue-900'>
 							<svg
 								xmlns='http://www.w3.org/2000/svg'
 								className='size-4'
@@ -34,19 +34,19 @@ function BreadCramps({ title, subtitle, id }: typing) {
 					</li>
 
 					<li className='relative flex items-center'>
-						<span className='absolute inset-y-0 -start-px h-10 w-4 bg-gray-100 [clip-path:_polygon(0_0,_0%_100%,_100%_50%)] rtl:rotate-180'></span>
+						<span className='absolute inset-y-0 -start-px h-10 w-4 bg-blue-100 [clip-path:_polygon(0_0,_0%_100%,_100%_50%)] rtl:rotate-180'></span>
 
 						<a
 							href='#'
-							className='flex h-10 items-center bg-white pe-4 ps-8 text-xs font-medium transition hover:text-gray-900'>
+							className='flex h-10 items-center bg-white pe-4 ps-8 text-xs font-medium transition hover:text-blue-900'>
 							{subtitle}
 						</a>
 					</li>
 					<li className='relative flex items-center'>
-						<span className='absolute inset-y-0 -start-px h-10 w-4 bg-gray-100 [clip-path:_polygon(0_0,_0%_100%,_100%_50%)] rtl:rotate-180'></span>
+						<span className='absolute inset-y-0 -start-px h-10 w-4 bg-blue-100 [clip-path:_polygon(0_0,_0%_100%,_100%_50%)] rtl:rotate-180'></span>
 						<a
 							href='#'
-							className='flex h-10 items-center bg-white pe-4 ps-8 text-xs font-medium transition hover:text-gray-900'>
+							className='flex h-10 items-center bg-white pe-4 ps-8 text-xs font-medium transition hover:text-blue-900'>
 							{id}
 						</a>
 					</li>

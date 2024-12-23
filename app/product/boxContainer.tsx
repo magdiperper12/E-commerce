@@ -46,7 +46,7 @@ function BoxContainer() {
 
 	if (loading) {
 		return (
-			<div className='grid grid-cols-4 gap-8 gap-y-14 px-8'>
+			<div className='grid  xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 gap-y-14 px-8'>
 				{Array(4)
 					.fill(null)
 					.map((_, index) => (
@@ -60,8 +60,7 @@ function BoxContainer() {
 
 	return (
 		<>
-			<h1 className='my-10 mx-12 text-5xl text-teal-600 font-bold'>shopping</h1>
-			<div className='grid grid-cols-4 gap-8 gap-y-14 px-8'>
+			<div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 gap-y-14 px-8 xl:grid-cols-4 '>
 				{products.map((box) => (
 					<div key={box.id}>
 						<Box

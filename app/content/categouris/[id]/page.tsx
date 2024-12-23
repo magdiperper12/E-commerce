@@ -2,11 +2,11 @@
 
 import React, { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import Box from '../box';
-import LoadCard from '../loadCard';
 import BreadCramps from '@/app/_component/breadCramps';
 import { FaShoppingCart } from 'react-icons/fa';
 import { useUser } from '@clerk/nextjs';
+import LoadCard from '@/app/product/loadCard';
+import Box from '@/app/product/box';
 
 interface RatingType {
 	rate: number;
@@ -61,8 +61,7 @@ const page: React.FC = () => {
 				})
 				.then((data) => {
 					const filteredItems = data.filter(
-						(product: BoxType) =>
-							product.category === item.category && product.id !== item.id
+						(product: BoxType) => product.category === item.category
 					);
 					setSimilarItems(filteredItems);
 				})
@@ -98,59 +97,16 @@ const page: React.FC = () => {
 		<section className='max-w-screen-lg m-auto py-28 container space-y-10'>
 			<BreadCramps
 				title='home'
-				subtitle='product item'
-				id={item.id}
+				subtitle='categories'
+				id={item.category}
 			/>
-			<div className='relative gap-10 rounded-tr-3xl shadow-md hover:shadow-xl transition-shadow overflow-hidden rounded-lg grid grid-cols-2 m-auto duration-300'>
-				<div className='p-14'>
-					<div className='overflow-hidden rounded-bl-3xl rounded-tr-3xl'>
-						<img
-							src={item.image}
-							alt={`Image of ${item.title}`}
-							loading='lazy'
-							className='h-72 w-full object-cover transition-transform duration-300 hover:scale-110'
-						/>
-					</div>
-				</div>
-				<div className='relative bg-white p-14 text-start'>
-					<p className='text-blue-700'>${item.price}</p>
-					<h3 className='mt-1.5 text-lg font-medium text-gray-900 line-clamp-1'>
-						{item.title}
-					</h3>
-					<span className='absolute -right-px -top-px rounded-bl-3xl z-10 rounded-tr-3xl bg-gradient-to-r from-blue-600 to-gray-500 px-6 py-4 font-medium uppercase tracking-widest text-white'>
-						{item.category}
-					</span>
-					<p className='mt-1.5 text-gray-700 line-clamp-3'>
-						{item.description}
-					</p>
-					<div className='flex flex-col py-1 items-start'>
-						<p className='text-blue-700 font-bold'>
-							Rate:{' '}
-							<span className='italic text-green-700'>{item.rating.rate}</span>{' '}
-							💥
-						</p>
-						<p className='text-blue-700 font-bold'>
-							Count:{' '}
-							<span className='italic text-green-700'>{item.rating.count}</span>
-						</p>
-					</div>
-					<form className='mt-2'>
-						<button
-							type='button'
-							onClick={() => handleLoginRedirect()}
-							className='w-1/2 flex gap-3 justify-center items-center rounded bg-cyan-700 px-4 text-center py-3 text-sm font-medium text-white transition hover:scale-105'>
-							<FaShoppingCart />
-							Add to Cart
-						</button>
-					</form>
-				</div>
-			</div>
+
 			{similarItems.length > 0 ? (
-				<div>
-					<h1 className='pb-3 pt-20 text-blue-500 text-4xl font-bold'>
-						Similar Products
+				<div className='px-5'>
+					<h1 className='pb-5 pt-10 text-blue-500 text-4xl font-bold'>
+						{item.category}
 					</h1>
-					<div className='grid pt-10 grid-cols-3 gap-4'>
+					<div className='grid pt-10 lg:grid-cols-3  md:grid-cols-2 grid-cols-1  gap-4'>
 						{similarItems.map((simItem) => (
 							<Box
 								key={simItem.id}
