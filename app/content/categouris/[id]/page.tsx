@@ -1,12 +1,12 @@
+// page.tsx
 'use client';
 
 import React, { useEffect, useState } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import BreadCramps from '@/app/_component/breadCramps';
-import { FaShoppingCart } from 'react-icons/fa';
-import { useUser } from '@clerk/nextjs';
 import LoadCard from '@/app/product/loadCard';
 import Box from '@/app/product/box';
+import { useUser } from '@clerk/nextjs';
 
 interface RatingType {
 	rate: number;
@@ -14,16 +14,16 @@ interface RatingType {
 }
 
 interface BoxType {
-	rating: RatingType;
-	id: string;
+	id: string | number;
 	title: string;
-	price: number;
+	price: string;
 	description: string;
 	category: string;
 	image: string;
+	rating: RatingType;
 }
 
-const page: React.FC = () => {
+const Page: React.FC = () => {
 	const params = useParams();
 	const id = Array.isArray(params?.id) ? params.id[0] : params?.id;
 	const [item, setItem] = useState<BoxType | null>(null);
@@ -35,8 +35,6 @@ const page: React.FC = () => {
 	const handleLoginRedirect = () => {
 		if (!user) {
 			router.push('/sign-in');
-		} else {
-			// Placeholder for additional functionality
 		}
 	};
 
@@ -47,7 +45,7 @@ const page: React.FC = () => {
 					if (!response.ok) throw new Error('Failed to fetch item');
 					return response.json();
 				})
-				.then((data) => setItem(data))
+				.then(setItem)
 				.catch((error) => console.error('Error fetching item:', error));
 		}
 	}, [id]);
@@ -61,7 +59,8 @@ const page: React.FC = () => {
 				})
 				.then((data) => {
 					const filteredItems = data.filter(
-						(product: BoxType) => product.category === item.category
+						(product: BoxType) =>
+							product.category === item.category && product.id !== item.id
 					);
 					setSimilarItems(filteredItems);
 				})
@@ -81,13 +80,11 @@ const page: React.FC = () => {
 
 	if (!item) {
 		return (
-			<div className='grid  xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 gap-y-14 px-8'>
+			<div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 gap-y-14 px-8'>
 				{Array(4)
 					.fill(null)
 					.map((_, index) => (
-						<div key={index}>
-							<LoadCard />
-						</div>
+						<LoadCard key={index} />
 					))}
 			</div>
 		);
@@ -100,23 +97,22 @@ const page: React.FC = () => {
 				subtitle='categories'
 				id={item.category}
 			/>
-
 			{similarItems.length > 0 ? (
 				<div className='px-5'>
 					<h1 className='pb-5 pt-10 text-blue-500 text-4xl font-bold'>
 						{item.category}
 					</h1>
-					<div className='grid pt-10 lg:grid-cols-3  md:grid-cols-2 grid-cols-1  gap-4'>
+					<div className='grid pt-10 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4'>
 						{similarItems.map((simItem) => (
 							<Box
 								key={simItem.id}
-								id={simItem.id}
+								id={simItem.id.toString()}
 								title={simItem.title}
-								price={simItem.price}
+								price={simItem.price.toString()}
 								description={simItem.description}
 								category={simItem.category}
 								image={simItem.image}
-								ratingRate={simItem.rating.rate.toString()}
+								ratingRate={simItem.rating.rate}
 								ratingCount={simItem.rating.count}
 							/>
 						))}
@@ -129,4 +125,4 @@ const page: React.FC = () => {
 	);
 };
 
-export default page;
+export default Page;

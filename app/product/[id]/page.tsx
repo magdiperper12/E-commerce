@@ -15,7 +15,7 @@ interface RatingType {
 
 interface BoxType {
 	rating: RatingType;
-	id: string;
+	id: any;
 	title: string;
 	price: number;
 	description: string;
@@ -156,11 +156,11 @@ const page: React.FC = () => {
 								key={simItem.id}
 								id={simItem.id}
 								title={simItem.title}
-								price={simItem.price}
+								price={simItem.price.toString()}
 								description={simItem.description}
 								category={simItem.category}
 								image={simItem.image}
-								ratingRate={simItem.rating.rate.toString()}
+								ratingRate={simItem.rating.rate}
 								ratingCount={simItem.rating.count}
 							/>
 						))}

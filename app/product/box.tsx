@@ -9,6 +9,7 @@ interface BoxProps {
 	image: string;
 	ratingRate: number;
 	ratingCount: number;
+	id: string;
 }
 
 const Box: React.FC<BoxProps> = ({
