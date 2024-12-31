@@ -2,7 +2,6 @@ import { Roboto } from 'next/font/google';
 import './globals.css';
 import Header from './_component/header';
 import Footer from './_component/footer';
-import { ClerkProvider } from '@clerk/nextjs';
 
 // Import Turret Road font
 const turretRoad = Roboto({
@@ -21,14 +20,12 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<ClerkProvider>
-			<html lang='en'>
-				<body className={turretRoad.className}>
-					<Header />
-					<div>{children}</div>
-					<Footer />
-				</body>
-			</html>
-		</ClerkProvider>
+		<html lang='en'>
+			<body className={turretRoad.className}>
+				<Header />
+				<div>{children}</div>
+				<Footer />
+			</body>
+		</html>
 	);
 }

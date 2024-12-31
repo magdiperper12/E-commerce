@@ -6,7 +6,6 @@ import { useParams, useRouter } from 'next/navigation';
 import BreadCramps from '@/app/_component/breadCramps';
 import LoadCard from '@/app/product/loadCard';
 import Box from '@/app/product/box';
-import { useUser } from '@clerk/nextjs';
 
 interface RatingType {
 	rate: number;
@@ -28,15 +27,6 @@ const Page: React.FC = () => {
 	const id = Array.isArray(params?.id) ? params.id[0] : params?.id;
 	const [item, setItem] = useState<BoxType | null>(null);
 	const [similarItems, setSimilarItems] = useState<BoxType[]>([]);
-
-	const { user } = useUser();
-	const router = useRouter();
-
-	const handleLoginRedirect = () => {
-		if (!user) {
-			router.push('/sign-in');
-		}
-	};
 
 	useEffect(() => {
 		if (id) {

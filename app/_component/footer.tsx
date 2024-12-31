@@ -1,6 +1,5 @@
 'use client';
 
-import { useUser } from '@clerk/nextjs';
 import Link from 'next/link';
 import React from 'react';
 import { FaCartShopping } from 'react-icons/fa6';

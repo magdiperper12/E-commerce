@@ -6,7 +6,6 @@ import Box from '../box';
 import LoadCard from '../loadCard';
 import BreadCramps from '@/app/_component/breadCramps';
 import { FaShoppingCart } from 'react-icons/fa';
-import { useUser } from '@clerk/nextjs';
 
 interface RatingType {
 	rate: number;
@@ -29,11 +28,10 @@ const page: React.FC = () => {
 	const [item, setItem] = useState<BoxType | null>(null);
 	const [similarItems, setSimilarItems] = useState<BoxType[]>([]);
 
-	const { user } = useUser();
 	const router = useRouter();
 
 	const handleLoginRedirect = () => {
-		if (!user) {
+		if (!item) {
 			router.push('/sign-in');
 		} else {
 			// Placeholder for additional functionality
